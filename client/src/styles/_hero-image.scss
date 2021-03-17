@@ -1,0 +1,24 @@
+.hero-image {
+  background-image: url('../assets/images/Colin-Stevens-Portfolio-Hero.jpg');
+  
+}
+
+.hero-image-text-overlay {
+  position: relative;
+  padding-top: 5%;
+  margin-left: 10%;
+  z-index: 99;
+}
+
+.hero-image-text-overlay__header {
+  color: rgba(255, 255, 255, .75);
+  font-size: 45px;
+}
+
+.hero-image-text-overlay__subheader {
+  color: rgba(255, 255, 255, .75);
+  font-size: 25px;
+}
+
+
+

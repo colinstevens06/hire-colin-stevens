@@ -1,5 +1,194 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #74738c;
+}
+
+li {
+  margin-left: 20px;
+}
+
+.container__main-content {
+  width: 90%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image__background {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 105vh;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 10px .5rem #48485e;
+          box-shadow: 6px 10px .5rem #48485e;
+}
+
+.image__background::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.hero-image {
+  background-image: url("../assets/images/Colin-Stevens-Portfolio-Hero.jpg");
+}
+
+.hero-image-text-overlay {
+  position: relative;
+  padding-top: 5%;
+  margin-left: 10%;
+  z-index: 99;
+}
+
+.hero-image-text-overlay__header {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 45px;
+}
+
+.hero-image-text-overlay__subheader {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 25px;
+}
+
+.hero-image__this-is-me {
+  background-image: url("../assets/images/about-colin-stevens-baltimore-web-developer-desktop-2.jpg");
+}
+
+.container__this-is-me-text {
+  width: 50%;
+  margin-top: 25px;
+  max-width: 175px;
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.container__this-is-me-text p {
+  margin-bottom: 15px;
+  font-size: .75rem;
+}
+
+.container__this-is-me-text p:last-of-type {
+  margin-bottom: 0;
+}
+
+.hero-image__my-projects {
+  background-image: url("../assets/images/niagara-falls.jpg");
+}
+
+.header__my-projects {
+  position: relative;
+  font-size: 45px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 10px 0;
+  z-index: 2;
+}
+
+.carousel {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.65);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.carousel-item {
+  min-height: 300px;
+  max-height: 300px;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+
+.header__projects-slider-item {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.container__slider-item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.text__project-slider-item p, .text__project-slider-item a {
+  font-size: .5rem;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+
+.image__project-slider-item {
+  width: 100%;
+}
+
+.image__project-slider-item img {
+  max-height: 180px;
+  width: auto;
+}
+
+.hero-image__contact-me {
+  background-image: url("../assets/images/fells-point-sunrise.jpg");
+}
+
+.container-text__contact-me {
+  position: relative;
+  z-index: 2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  padding: 25px 15px;
+}
+
+.header__contact-me {
+  font-size: 45px;
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+}
+
+.body-copy__contact-me {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  width: 85%;
+}
+
+.body-copy__contact-me p, .body-copy__contact-me ul {
+  margin-bottom: 15px;
+}
+
+.text-black {
+  color: rgba(0, 0, 0, 0.85);
 }
 /*# sourceMappingURL=style.css.map */

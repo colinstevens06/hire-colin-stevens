@@ -1,0 +1,29 @@
+.hero-image__contact-me {
+  background-image: url("../assets/images/fells-point-sunrise.jpg");
+ }
+
+.container-text__contact-me {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 10px;
+  padding: 25px 15px;
+
+}
+
+.header__contact-me {
+  font-size: 45px;
+  color: rgba(255,255,255,.85);
+  text-align: center;
+}
+
+.body-copy__contact-me {
+  font-size: 12px;
+  color: rgba(255,255,255,.85);
+  width: 85%;
+  p, ul {
+    margin-bottom: 15px;
+  }
+
+}
