@@ -6,9 +6,9 @@ export default function ContactMe() {
       <div className="container-text__contact-me">
         <div className="header__contact-me">Contact Me</div>
         <div className="body-copy__contact-me">
-          <p>Want to work on a project together? I can help with:</p>
+          <p>Want to work together? I can help with:</p>
           <ul>
-            <li>Web Development</li>
+            <li>Full-Stack Web Development</li>
             <li>Photography</li>
             <li>Writing Web Copy</li>
             <li>Marketing</li>

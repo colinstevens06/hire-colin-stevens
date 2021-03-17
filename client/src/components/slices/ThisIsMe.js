@@ -8,7 +8,7 @@ export default function ThisIsMe() {
         <div className="container__this-is-me-text">
           <p>I’m a creative person with a passion for life.</p>
 
-          <p>I enjoy building interactive JS applications with an eye on design.</p>
+          <p>I love building interactive JS applications and finding solutions to complex problems.</p>
 
           <p>In my spare time, you’ll find me outside, playing music or taking photos (including the photos on this site).</p>
 

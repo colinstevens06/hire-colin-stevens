@@ -13,15 +13,16 @@
 }
 
 .header__contact-me {
-  font-size: 45px;
+  font-size: 75px;
   color: rgba(255,255,255,.85);
   text-align: center;
 }
 
 .body-copy__contact-me {
-  font-size: 12px;
+  padding-top: 25px;
+  font-size: 1.25rem;
   color: rgba(255,255,255,.85);
-  width: 85%;
+  width: 65%;
   p, ul {
     margin-bottom: 15px;
   }

@@ -10,12 +10,13 @@ html, body {
 }
 
 li {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .container__main-content {
+  padding-top: 15px;
   width: 90%;
-  max-width: 650px;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,7 +25,7 @@ li {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 105vh;
+  height: 95vh;
   margin-bottom: 15px;
   border-radius: 10px;
   -webkit-box-shadow: 6px 10px .5rem #48485e;
@@ -56,12 +57,12 @@ li {
 
 .hero-image-text-overlay__header {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 45px;
+  font-size: 75px;
 }
 
 .hero-image-text-overlay__subheader {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 25px;
+  font-size: 45px;
 }
 
 .hero-image__this-is-me {
@@ -69,9 +70,8 @@ li {
 }
 
 .container__this-is-me-text {
-  width: 50%;
   margin-top: 25px;
-  max-width: 175px;
+  max-width: 350px;
   background-color: rgba(255, 255, 255, 0.55);
   border-radius: 5px;
   padding: 15px;
@@ -79,7 +79,7 @@ li {
 
 .container__this-is-me-text p {
   margin-bottom: 15px;
-  font-size: .75rem;
+  font-size: 1.25rem;
 }
 
 .container__this-is-me-text p:last-of-type {
@@ -92,7 +92,7 @@ li {
 
 .header__my-projects {
   position: relative;
-  font-size: 45px;
+  font-size: 75px;
   text-align: center;
   color: rgba(255, 255, 255, 0.85);
   padding: 10px 0;
@@ -118,15 +118,15 @@ li {
 }
 
 .carousel-item {
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 450px;
+  max-height: 500px;
   padding-top: 15px;
   padding-bottom: 60px;
 }
 
 .header__projects-slider-item {
   text-align: center;
-  font-size: 25px;
+  font-size: 45px;
   color: black;
   font-weight: 700;
   padding-bottom: 15px;
@@ -142,9 +142,9 @@ li {
 }
 
 .text__project-slider-item p, .text__project-slider-item a {
-  font-size: .5rem;
+  font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 7px;
+  margin-bottom: 18px;
 }
 
 .image__project-slider-item {
@@ -152,7 +152,7 @@ li {
 }
 
 .image__project-slider-item img {
-  max-height: 180px;
+  max-height: 360px;
   width: auto;
 }
 
@@ -173,15 +173,16 @@ li {
 }
 
 .header__contact-me {
-  font-size: 45px;
+  font-size: 75px;
   color: rgba(255, 255, 255, 0.85);
   text-align: center;
 }
 
 .body-copy__contact-me {
-  font-size: 12px;
+  padding-top: 25px;
+  font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.85);
-  width: 85%;
+  width: 65%;
 }
 
 .body-copy__contact-me p, .body-copy__contact-me ul {

@@ -1,2 +1,2 @@
-# full-stack-template-2021
-Can copy/paste this repo when starting future projects - this is basis of a MERN project w/ routing and a DB
+# Colin Stevens
+Hiring me will be the best decision you make in 2021.

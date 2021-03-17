@@ -9,13 +9,13 @@ html, body {
 }
 
 li {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .container__main-content {
+  padding-top: 15px;
   width: 90%;
-  max-width: 650px;
-  // background-color: #ffffff;
+  max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,7 +24,7 @@ li {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 105vh;
+  height: 95vh;
   margin-bottom: 15px;
   border-radius: 10px;
   box-shadow: 6px 10px .5rem #48485e;

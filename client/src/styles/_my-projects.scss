@@ -4,7 +4,7 @@
 
 .header__my-projects {
   position: relative;
-  font-size: 45px;
+  font-size: 75px;
   text-align: center;
   color: rgba(255, 255, 255, 0.85);
   padding: 10px 0;
@@ -32,15 +32,15 @@
 }
 
 .carousel-item {
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 450px;
+  max-height: 500px;
   padding-top: 15px;
   padding-bottom: 60px;
 }
 
 .header__projects-slider-item {
   text-align: center;
-  font-size: 25px;
+  font-size: 45px;
   color: black;
   font-weight: 700;
   padding-bottom: 15px;
@@ -54,16 +54,16 @@
 
 .text__project-slider-item {
   p, a {
-    font-size: .5rem;
+    font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 7px;
+    margin-bottom: 18px;
   }
 }
 
 .image__project-slider-item {
   width: 100%;
   img {
-    max-height: 180px;
+    max-height: 360px;
     width: auto;
 
   }
