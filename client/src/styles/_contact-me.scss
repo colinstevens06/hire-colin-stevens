@@ -28,3 +28,20 @@
   }
 
 }
+
+.text__back-to-top {
+  position: absolute;
+  bottom: 15px;
+  right: 10%;
+  transform: translateX(-10%);
+  z-index: 99;
+  color: rgba(255,255,255,.25);
+  font-size: 25px;
+  transition: .5s;
+  &:hover {
+    cursor: pointer;
+    transition: .5s;
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
+  }
+}

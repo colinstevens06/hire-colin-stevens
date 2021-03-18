@@ -41,6 +41,12 @@ li {
   }
 }
 
+.no-overlay {
+  &::after{
+    background-color: transparent;
+  }
+}
+
 @import './hero-image';
 @import './this-is-me';
 @import './my-projects';

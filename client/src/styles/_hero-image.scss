@@ -20,5 +20,43 @@
   font-size: 45px;
 }
 
+.down-arrow {
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, .1);
+  height: 5em;
+  transition: .5s;
+  animation: pulse-orange 10s infinite;
+  &:hover {
+    cursor: pointer;
+    animation: none;
+    transition: .5s;
+    color: rgba(255, 255, 255, 1);
+  }
+    
+}
+
+.svg-inline--fa.fa-w-8 {
+  width: 2.5em !important;
+
+}
+
+@keyframes pulse-orange {
+  0%{
+    color: rgba(255, 255, 255, .1);
+  } 35% {
+    color: rgba(255, 255, 255, .1);
+  } 50% {
+    color: rgba(186, 99, 61, 0.8);
+  } 65% {
+    color: rgba(255, 255, 255, .1);
+  } 
+}
+
+
+
 
 

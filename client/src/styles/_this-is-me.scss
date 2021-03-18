@@ -5,16 +5,60 @@
 
 .container__this-is-me-text {
   margin-top: 25px;
-  max-width: 350px;
-  background-color: rgba(255,255,255,.55);
+  max-width: 400px;
+  background-color: rgba(255,255,255,.65);
   border-radius: 5px;
-  padding: 15px;
+  padding: 25px;
+  transform: translateX(-15%);
   p {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
     font-size: 1.25rem;
     &:last-of-type {
       margin-bottom: 0;
     }
   }
 
+}
+
+.header__this-is-me {
+  color: rgba(0,0,0,.85);
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container__right-arrows {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  display: grid;
+  grid-template-rows: 50% 50%;
+
+}
+
+.arrows__this-is-me {
+  color: rgba(255, 255, 255, .1);
+  height: 5em;
+  animation: pulse-yellow 10s infinite;
+  transition: .5s;
+  &:hover {
+    cursor: pointer;
+    animation: normal;
+    transition: .5s;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+@keyframes pulse-yellow {
+  0%{
+    color: rgba(255, 255, 255, .1);
+  } 35% {
+    color: rgba(255, 255, 255, .1);
+  } 50% {
+    color: rgba(166,140,89, 0.8);
+  } 65% {
+    color: rgba(255, 255, 255, .1);
+  } 
 }

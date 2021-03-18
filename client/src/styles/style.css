@@ -44,6 +44,10 @@ li {
   z-index: 1;
 }
 
+.no-overlay::after {
+  background-color: transparent;
+}
+
 .hero-image {
   background-image: url("../assets/images/Colin-Stevens-Portfolio-Hero.jpg");
 }
@@ -65,25 +69,153 @@ li {
   font-size: 45px;
 }
 
+.down-arrow {
+  position: absolute;
+  z-index: 2;
+  bottom: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.1);
+  height: 5em;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-animation: pulse-orange 10s infinite;
+          animation: pulse-orange 10s infinite;
+}
+
+.down-arrow:hover {
+  cursor: pointer;
+  -webkit-animation: none;
+          animation: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+}
+
+.svg-inline--fa.fa-w-8 {
+  width: 2.5em !important;
+}
+
+@-webkit-keyframes pulse-orange {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    color: rgba(186, 99, 61, 0.8);
+  }
+  65% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes pulse-orange {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    color: rgba(186, 99, 61, 0.8);
+  }
+  65% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 .hero-image__this-is-me {
   background-image: url("../assets/images/about-colin-stevens-baltimore-web-developer-desktop-2.jpg");
 }
 
 .container__this-is-me-text {
   margin-top: 25px;
-  max-width: 350px;
-  background-color: rgba(255, 255, 255, 0.55);
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.65);
   border-radius: 5px;
-  padding: 15px;
+  padding: 25px;
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
 }
 
 .container__this-is-me-text p {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
   font-size: 1.25rem;
 }
 
 .container__this-is-me-text p:last-of-type {
   margin-bottom: 0;
+}
+
+.header__this-is-me {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container__right-arrows {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+}
+
+.arrows__this-is-me {
+  color: rgba(255, 255, 255, 0.1);
+  height: 5em;
+  -webkit-animation: pulse-yellow 10s infinite;
+          animation: pulse-yellow 10s infinite;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.arrows__this-is-me:hover {
+  cursor: pointer;
+  -webkit-animation: normal;
+          animation: normal;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+}
+
+@-webkit-keyframes pulse-yellow {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    color: rgba(166, 140, 89, 0.8);
+  }
+  65% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes pulse-yellow {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    color: rgba(166, 140, 89, 0.8);
+  }
+  65% {
+    color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 .hero-image__my-projects {
@@ -104,6 +236,7 @@ li {
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.65);
   width: 80%;
+  margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 15px;
@@ -122,6 +255,36 @@ li {
   max-height: 500px;
   padding-top: 15px;
   padding-bottom: 60px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '\203A';
+  position: relative;
+  z-index: 99;
+  font-size: 29px;
+  font-weight: 1000;
+  color: #000000;
+}
+
+.carousel-control-next-icon:after:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.carousel-control-prev-icon:after {
+  content: '\2039';
+  font-size: 29px;
+  color: #000000;
 }
 
 .header__projects-slider-item {
@@ -156,6 +319,54 @@ li {
   width: auto;
 }
 
+.arrows__projects {
+  color: rgba(255, 255, 255, 0.1);
+  height: 5em;
+  -webkit-animation: pulse-blue 10s infinite;
+          animation: pulse-blue 10s infinite;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.arrows__projects:hover {
+  cursor: pointer;
+  -webkit-animation: normal;
+          animation: normal;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: white;
+}
+
+@-webkit-keyframes pulse-blue {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    color: rgba(97, 155, 180, 0.7);
+  }
+  65% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes pulse-blue {
+  0% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  35% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    color: rgba(97, 155, 180, 0.7);
+  }
+  65% {
+    color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 .hero-image__contact-me {
   background-image: url("../assets/images/fells-point-sunrise.jpg");
 }
@@ -187,6 +398,27 @@ li {
 
 .body-copy__contact-me p, .body-copy__contact-me ul {
   margin-bottom: 15px;
+}
+
+.text__back-to-top {
+  position: absolute;
+  bottom: 15px;
+  right: 10%;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+  z-index: 99;
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 25px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.text__back-to-top:hover {
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
 }
 
 .text-black {
