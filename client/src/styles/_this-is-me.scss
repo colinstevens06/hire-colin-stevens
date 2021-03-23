@@ -3,13 +3,18 @@
 
 }
 
+
+
 .container__this-is-me-text {
-  margin-top: 25px;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 5%;
+  transform: translate(-5%, -50%);
   max-width: 400px;
   background-color: rgba(255,255,255,.65);
   border-radius: 5px;
   padding: 25px;
-  transform: translateX(-15%);
   p {
     margin-bottom: 22px;
     font-size: 1.25rem;
@@ -61,4 +66,35 @@
   } 65% {
     color: rgba(255, 255, 255, .1);
   } 
+}
+
+
+@media only screen and (max-width: 415px) {
+  .container__this-is-me-text {
+    top: auto;
+    transform: none;
+    bottom: 5%;
+    max-width: 95%;
+    border-radius: 0px;
+    padding: 25px;
+    background-color: rgba(255,255,255,.8);
+
+    p {
+      margin-bottom: 22px;
+      font-size: 1rem;
+
+    }
+  
+  }
+  
+  .header__this-is-me {
+    font-size: 35px;
+  }
+
+  .hero-image__this-is-me {
+    background-image: url("../assets/images/about-colin-stevens-baltimore-web-developer-desktop-2.jpg");
+    background-position: center;
+  }
+
+
 }

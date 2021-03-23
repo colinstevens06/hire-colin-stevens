@@ -127,18 +127,35 @@ li {
   }
 }
 
+@media only screen and (max-width: 415px) {
+  .hero-image-text-overlay__header {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 45px;
+  }
+  .hero-image-text-overlay__subheader {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 28px;
+  }
+  .down-arrow {
+    display: none;
+  }
+}
+
 .hero-image__this-is-me {
   background-image: url("../assets/images/about-colin-stevens-baltimore-web-developer-desktop-2.jpg");
 }
 
 .container__this-is-me-text {
-  margin-top: 25px;
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 5%;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
   max-width: 400px;
   background-color: rgba(255, 255, 255, 0.65);
   border-radius: 5px;
   padding: 25px;
-  -webkit-transform: translateX(-15%);
-          transform: translateX(-15%);
 }
 
 .container__this-is-me-text p {
@@ -215,6 +232,30 @@ li {
   }
   65% {
     color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .container__this-is-me-text {
+    top: auto;
+    -webkit-transform: none;
+            transform: none;
+    bottom: 5%;
+    max-width: 95%;
+    border-radius: 0px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .container__this-is-me-text p {
+    margin-bottom: 22px;
+    font-size: 1rem;
+  }
+  .header__this-is-me {
+    font-size: 35px;
+  }
+  .hero-image__this-is-me {
+    background-image: url("../assets/images/about-colin-stevens-baltimore-web-developer-desktop-2.jpg");
+    background-position: center;
   }
 }
 
@@ -421,7 +462,41 @@ li {
   text-decoration: none;
 }
 
-.text-black {
-  color: rgba(0, 0, 0, 0.85);
+.email {
+  color: inherit;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.email:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #ebedbf;
+  text-decoration: none;
+}
+
+.form__contact {
+  width: 100%;
+}
+
+.form__contact input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+
+.form__contact textarea {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+@media only screen and (max-width: 415px) {
+  .container__main-content {
+    padding-top: 0;
+    width: 100%;
+  }
+  .image__background {
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */

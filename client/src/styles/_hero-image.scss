@@ -58,5 +58,23 @@
 
 
 
+@media only screen and (max-width: 415px) {
 
+  .hero-image-text-overlay__header {
+    color: rgba(255, 255, 255, .75);
+    font-size: 45px;
+  }
+
+  .hero-image-text-overlay__subheader {
+    color: rgba(255, 255, 255, .75);
+    font-size: 28px;
+  }
+
+  .down-arrow {
+    display: none;
+  }
+
+  
+
+}
 

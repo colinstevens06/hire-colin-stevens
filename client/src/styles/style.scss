@@ -52,7 +52,16 @@ li {
 @import './my-projects';
 @import './contact-me';
 
+@media only screen and (max-width: 415px) {
 
-.text-black {
-  color: rgba(0,0,0,.85)
+  .container__main-content {
+    padding-top: 0;
+    width: 100%;
+ }
+
+ .image__background {
+    height: 100vh;
+ }
+
+
 }
