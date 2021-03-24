@@ -1,14 +1,39 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
+import API from "../../utils/API"
 
 import { Modal, Button, Row, Col } from 'react-bootstrap'
 
 export default function ContactMe() {
   const [showModal, setShowModal] = useState(false);
+  const [formObject, setFormObject] = useState({})
 
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
+
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormObject({ ...formObject, [name]: value })
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    API.sendMessage({
+      firstName: formObject.first,
+      lastName: formObject.last,
+      email: formObject.email,
+      phone: formObject.phone,
+      message: formObject.message,
+    }).then((response) => {
+      if (response.data.status === 'success') {
+        console.log("success")
+      } else if (response.data.status === 'fail') {
+        console.log("message failed")
+      }
+    })
+  }
+
 
 
   return (
@@ -26,7 +51,7 @@ export default function ContactMe() {
             <li>Music</li>
 
           </ul>
-          <p>You can email me at <a href="mailto:colinstevens06@gmail.com" className="email">colinstevens06@gmail.com</a> or fill out <span onClick={handleShow}>this form</span>.</p>
+          <p>You can email me at <a href="mailto:colinstevens06@gmail.com" className="email">colinstevens06@gmail.com</a> or fill out <span onClick={handleShow} className="email">this form</span>.</p>
         </div>
       </div>
       <Modal show={showModal} onHide={handleClose}>
@@ -37,27 +62,27 @@ export default function ContactMe() {
           <form className="form__contact">
             <Row>
               <Col>
-                <input name="first-name" placeholder="First Name" />
+                <input name="first" placeholder="First Name" onChange={handleInputChange} />
 
               </Col>
               <Col>
-                <input name="last-name" placeholder="Last Name" />
-
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <input name="email" placeholder="Email" />
-
-              </Col>
-              <Col>
-                <input name="phone" placeholder="Phone" />
+                <input name="last" placeholder="Last Name" onChange={handleInputChange} />
 
               </Col>
             </Row>
             <Row>
               <Col>
-                <textarea name="message" placeholder="Tell me about your project" />
+                <input name="email" placeholder="Email" onChange={handleInputChange} />
+
+              </Col>
+              <Col>
+                <input name="phone" placeholder="Phone" onChange={handleInputChange} />
+
+              </Col>
+            </Row>
+            <Row>
+              <Col>
+                <textarea name="message" placeholder="Tell me about your project" onChange={handleInputChange} />
               </Col>
             </Row>
           </form>
@@ -66,7 +91,7 @@ export default function ContactMe() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleSubmit}>
             Submit
           </Button>
         </Modal.Footer>
