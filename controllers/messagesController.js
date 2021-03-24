@@ -16,20 +16,15 @@ module.exports = {
     let lastName = req.body.lastName
     let email = req.body.email
     let phone = req.body.phone
-    let message = req.body.message
+    let message = "<p><strong>Name:</strong> " + firstName + " " + lastName + "</p><p><strong>Email:</strong> " + email + "</p><p><strong>Phone:</strong> " + phone + "</p><p><strong>Message:</strong> " + req.body.message + "</p>"
     let subject = "New Contact: " + firstName + " " + lastName
 
     var mail = {
       from: "colinstevens06@gmail.com",
       to: "colinstevens06@gmail.com",
       subject: subject,
-      text: message
-      // text: {
-      //   name: firstName + lastName,
-      //   email: email,
-      //   phone: phone,
-      //   message: message
-      // }
+      html: message
+
     }
 
     transporter.sendMail(mail, (err, data) => {
