@@ -32,6 +32,9 @@
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "nodemailer": "^6.5.0"
+    "nodemailer": "^6.5.0",
+    "react": "^16.13.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   }
 }
