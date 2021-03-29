@@ -237,15 +237,33 @@ li {
 }
 
 @media only screen and (max-width: 415px) {
+  .hero-image__this-is-me {
+    background-image: url("../assets/images/about-colin-stevens-baltimore-web-developer-desktop-2.jpg");
+    background-position: 50% -60px;
+    background-size: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+  }
   .container__this-is-me-text {
+    position: relative;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    left: auto;
     top: auto;
     -webkit-transform: none;
             transform: none;
-    bottom: 5%;
     max-width: 95%;
-    border-radius: 0px;
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.8);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .container__this-is-me-text p {
     margin-bottom: 22px;
@@ -253,10 +271,6 @@ li {
   }
   .header__this-is-me {
     font-size: 35px;
-  }
-  .hero-image__this-is-me {
-    background-image: url("../assets/images/about-colin-stevens-baltimore-web-developer-desktop-2.jpg");
-    background-position: center;
   }
 }
 
@@ -311,21 +325,16 @@ li {
 
 .carousel-control-next-icon:after {
   content: '\203A';
-  position: relative;
-  z-index: 99;
-  font-size: 29px;
-  font-weight: 1000;
-  color: #000000;
-}
-
-.carousel-control-next-icon:after:hover {
-  background-color: #000000;
-  color: #ffffff;
 }
 
 .carousel-control-prev-icon:after {
   content: '\2039';
+}
+
+.carousel-control-next-icon:after,
+.carousel-control-prev-icon:after {
   font-size: 29px;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -406,6 +415,61 @@ li {
   }
   65% {
     color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .container__right-arrows {
+    display: none;
+  }
+  .header__my-projects {
+    font-size: 3rem;
+  }
+  .carousel {
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+  .carousel-inner {
+    overflow: scroll;
+  }
+  .container__slider-item {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    -webkit-column-gap: 0px;
+            column-gap: 0px;
+    row-gap: 10px;
+    padding: 0 10px;
+  }
+  .header__projects-slider-item {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .text__project-slider-item {
+    width: 100%;
+  }
+  .text__project-slider-item p, .text__project-slider-item a {
+    font-size: .85rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .image__project-slider-item img {
+    width: 100%;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 38px;
+    width: 38px;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+  }
+  .carousel-control-next-icon:after,
+  .carousel-control-prev-icon:after {
+    font-size: 22px;
   }
 }
 
@@ -498,6 +562,22 @@ li {
   padding-right: 28px;
   margin-left: 20px;
   text-align: center;
+}
+
+@media only screen and (max-width: 415px) {
+  .container-text__contact-me {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: 4rem auto;
+        grid-template-rows: 4rem auto;
+  }
+  .header__contact-me {
+    font-size: 3rem;
+  }
+  .body-copy__contact-me {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 415px) {

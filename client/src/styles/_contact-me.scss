@@ -78,10 +78,25 @@
   margin-left: 20px;
   text-align: center;
 
-  // .close {
-  //   padding: 0;
-  //   margin: 0;
-  //   top: 5px;
-  //   right: 5px;
-  // }
+}
+
+
+@media only screen and (max-width: 415px) {
+
+  .container-text__contact-me {
+    grid-template-columns: none;
+    grid-template-rows: 4rem auto;
+  }
+
+  .header__contact-me {
+    font-size: 3rem;
+  }
+
+  .body-copy__contact-me {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+
+
 }
