@@ -1,11 +1,11 @@
 const express = require("express")
 const routes = require("./routes")
 const app = express();
-const PORT = process.env.PORT || 3001;
 
 // so environmental variables work
 require('dotenv').config()
 
+const PORT = process.env.PORT || 3001;
 
 // Here's my middleware
 app.use(express.urlencoded({ extended: true }))
