@@ -1,5 +1,5 @@
 {
-  "name": "full-stack-template-2021",
+  "name": "colin-stevens-portfolio",
   "version": "1.0.0",
   "description": "Can copy/paste this repo when starting future projects - this is basis of a MERN project w/ routing and a DB",
   "main": "server.js",
@@ -23,7 +23,6 @@
   "bugs": {
     "url": "https://github.com/colinstevens06/full-stack-template-2021/issues"
   },
-  "homepage": "https://github.com/colinstevens06/full-stack-template-2021#readme",
   "devDependencies": {
     "concurrently": "^6.0.0",
     "dotenv": "^8.2.0",
