@@ -1,5 +1,4 @@
 const nodemailer = require("nodemailer")
-require('dotenv').config()
 
 // form submissions
 const transporter = nodemailer.createTransport({
