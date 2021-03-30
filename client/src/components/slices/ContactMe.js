@@ -69,7 +69,9 @@ export default function ContactMe() {
             <li>Music</li>
 
           </ul>
-          <p>You can email me at <a href="mailto:colinstevens06@gmail.com" className="email">colinstevens06@gmail.com</a> or fill out <span onClick={handleShow} className="email">this form</span>.</p>
+          <p>You can email me at <a href="mailto:colinstevens06@gmail.com" className="email">colinstevens06@gmail.com</a>
+            {/* or fill out <span onClick={handleShow} className="email">this form</span> */}
+          .</p>
         </div>
       </div>
       <ContactModal

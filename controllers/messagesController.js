@@ -6,7 +6,9 @@ require('dotenv').config()
 
 // form submissions
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.office365.com",
+  secureConnection: false,
+  port: 587,
   auth: {
     user: process.env.EMAIL,
     pass: process.env.EMAILPW
@@ -23,7 +25,7 @@ module.exports = {
     let subject = "New Contact: " + firstName + " " + lastName
 
     var mail = {
-      from: "colinstevens06@gmail.com",
+      from: "colin@drumminupwebsites.com",
       to: "colinstevens06@gmail.com",
       subject: subject,
       html: message
