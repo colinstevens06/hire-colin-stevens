@@ -1,5 +1,9 @@
 const nodemailer = require("nodemailer")
 
+// so process.env works
+require('dotenv').config()
+
+
 // form submissions
 const transporter = nodemailer.createTransport({
   service: "gmail",
