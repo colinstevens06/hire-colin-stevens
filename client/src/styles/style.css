@@ -138,7 +138,7 @@ li {
     font-size: 28px;
   }
   .down-arrow {
-    display: none;
+    bottom: 25%;
   }
 }
 
@@ -587,6 +587,10 @@ li {
   }
   .image__background {
     height: 100vh;
+    border-radius: 0;
+  }
+  .image__background::after {
+    border-radius: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

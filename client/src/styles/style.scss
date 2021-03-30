@@ -55,14 +55,18 @@ li {
 
 @media only screen and (max-width: 415px) {
 
-  .container__main-content {
-    padding-top: 0;
-    width: 100%;
- }
+    .container__main-content {
+      padding-top: 0;
+      width: 100%;
+  }
 
- .image__background {
+  .image__background {
     height: 100vh;
- }
+    border-radius: 0;
+    &::after{
+      border-radius: 0;
+    }
+  }
 
 
 }
