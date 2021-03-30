@@ -16,6 +16,7 @@
   font-size: 75px;
   color: rgba(255,255,255,.85);
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .body-copy__contact-me {
@@ -23,7 +24,8 @@
   font-size: 1.25rem;
   color: rgba(255,255,255,.85);
   width: 65%;
-  p, ul {
+  font-family: 'Montserrat', sans-serif;
+    p, ul {
     margin-bottom: 15px;
   }
 
@@ -86,15 +88,16 @@
   .container-text__contact-me {
     grid-template-columns: none;
     grid-template-rows: 4rem auto;
+    padding: 25px;
   }
 
   .header__contact-me {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .body-copy__contact-me {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
 

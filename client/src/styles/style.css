@@ -7,6 +7,7 @@
 
 html, body {
   background-color: #74738c;
+  font-family: 'Acme', sans-serif;
 }
 
 li {
@@ -62,12 +63,14 @@ li {
 
 .hero-image-text-overlay__header {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 75px;
+  font-size: 95px;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .hero-image-text-overlay__subheader {
+  font-family: 'Shadows Into Light', cursive;
   color: rgba(255, 255, 255, 0.75);
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .down-arrow {
@@ -276,6 +279,7 @@ li {
 
 .hero-image__my-projects {
   background-image: url("../assets/images/niagara-falls.jpg");
+  background-position: bottom center;
 }
 
 .header__my-projects {
@@ -493,6 +497,7 @@ li {
   font-size: 75px;
   color: rgba(255, 255, 255, 0.85);
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .body-copy__contact-me {
@@ -500,6 +505,7 @@ li {
   font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.85);
   width: 65%;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .body-copy__contact-me p, .body-copy__contact-me ul {
@@ -570,13 +576,14 @@ li {
         grid-template-columns: none;
     -ms-grid-rows: 4rem auto;
         grid-template-rows: 4rem auto;
+    padding: 25px;
   }
   .header__contact-me {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .body-copy__contact-me {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }
 
