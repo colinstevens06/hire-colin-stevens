@@ -80,11 +80,13 @@
   .container__this-is-me-text {
     position: relative;
     align-self: flex-end;
+
     left: auto;
     top: auto;
     transform: none;
     max-width: 95%;
     padding: 25px;
+    margin-bottom: 25px;
     background-color: rgba(255,255,255,.8);
     height: fit-content;
 
