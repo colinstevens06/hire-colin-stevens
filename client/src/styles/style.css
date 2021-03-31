@@ -514,6 +514,7 @@ li {
 }
 
 .text__back-to-top {
+  font-family: 'Shadows Into Light', cursive;
   position: absolute;
   bottom: 15px;
   right: 10%;
