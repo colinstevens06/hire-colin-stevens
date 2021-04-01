@@ -12,7 +12,10 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL,
     pass: process.env.EMAILPW
-  }
+  },
+  tls: {
+    ciphers: 'SSLv3'
+  },
 })
 
 module.exports = {
@@ -26,7 +29,7 @@ module.exports = {
 
     var mail = {
       from: "colin@drumminupwebsites.com",
-      to: "colinstevens06@gmail.com",
+      to: "colin@drumminupwebsites.com",
       subject: subject,
       html: message
 
@@ -37,7 +40,7 @@ module.exports = {
         res.json({
           status: 'fail'
         })
-        console.log(err)
+        console.log('err', err)
       } else {
         res.json({
           status: 'success'

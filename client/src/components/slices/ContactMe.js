@@ -17,7 +17,7 @@ export default function ContactMe() {
     setAlertMessage('')
   };
 
-  // const handleShow = () => setShowModal(true);
+  const handleShow = () => setShowModal(true);
 
 
   function handleInputChange(event) {

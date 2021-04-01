@@ -13,7 +13,7 @@ export default function ThisIsMe() {
 
         <p>I love building interactive JS applications, learning new ways to improve my code, and finding solutions to complex problems.</p>
 
-        <p>In my spare time, you’ll find me outside, playing music or taking photos (including the photos on this site).</p>
+        <p>In my spare time, you’ll find me outside, playing music or taking photos (including the photos on this site - except for this one - I'm not that good!).</p>
       </div>
       <div className="container__right-arrows">
         <Link to="hero" spy={true} smooth={true} duration={750}>
